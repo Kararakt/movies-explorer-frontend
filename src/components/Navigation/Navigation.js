@@ -7,7 +7,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { headerLinks } from '../../utils/constants';
 
 export const Navigation = () => {
-  const [menuActive, setMenuActive] = useState(true);
+  const [menuActive, setMenuActive] = useState(false);
 
   const location = useLocation().pathname;
 
