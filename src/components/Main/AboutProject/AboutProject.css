@@ -61,14 +61,16 @@
   margin-top: 0.875rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 968px) {
+  .about-project__block {
+    max-width: 19.9375rem;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1140px) {
   .about-project__blocks {
     gap: 1.875rem;
     margin-bottom: 5.8125rem;
-  }
-
-  .about-project__block {
-    max-width: 19.9375rem;
   }
 
   .about-project {

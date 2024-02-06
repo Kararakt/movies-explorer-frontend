@@ -41,9 +41,9 @@ export const Navigation = () => {
 
   useEffect(() => {
     if (menuActive) {
-      document.body.classList.add('app_scroll');
+      document.body.classList.add('page_scroll');
     } else {
-      document.body.classList.remove('app_scroll');
+      document.body.classList.remove('page_scroll');
     }
   }, [menuActive]);
   return (
