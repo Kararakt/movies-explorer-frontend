@@ -1,0 +1,135 @@
+.about-project {
+  margin: 0 4.375rem;
+  padding: 6.875rem 0;
+}
+
+.about-project__title {
+  margin: 0;
+  padding-bottom: 1.4375rem;
+  border-bottom: 1px solid #000;
+  font-size: 1.375rem;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.about-project__blocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 0;
+  margin: 4.375rem 0 6.875rem;
+  list-style: none;
+}
+
+.about-project__block {
+  max-width: 34.375rem;
+}
+
+.about-project__block-title {
+  font-size: 1.25rem;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.about-project__block-text {
+  margin: 1.625rem 0 0;
+  line-height: 1.25rem;
+}
+
+.about-project__bar {
+  display: grid;
+  grid-template-columns: 14.25rem 1fr;
+  grid-template-rows: 2.25rem auto;
+  text-align: center;
+}
+
+.about-project__time {
+  background-color: #2be080;
+  padding: 0.5625rem 0.875rem;
+  margin: 0;
+}
+
+.about-project__time_type_frontend {
+  background-color: #f2f2f2;
+}
+
+.about-project__bar-name {
+  color: #a0a0a0;
+  font-weight: 500;
+  line-height: 1.0625rem;
+  margin-top: 0.875rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+  .about-project__blocks {
+    gap: 1.875rem;
+    margin-bottom: 5.8125rem;
+  }
+
+  .about-project__block {
+    max-width: 19.9375rem;
+  }
+
+  .about-project {
+    margin: 0 3.125rem;
+    padding: 5.625rem 0;
+  }
+
+  .about-project__block-text {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    margin-top: 1.375rem;
+  }
+
+  .about-project__bar {
+    grid-template-columns: 8.75rem 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-project {
+    margin-left: 1.125rem;
+    margin-right: 1.125rem;
+    padding-top: 4.375rem;
+    padding-bottom: 4.3125rem;
+  }
+
+  .about-project__title {
+    font-size: 1.125rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .about-project__blocks {
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+    flex-direction: column;
+    gap: 3.8rem;
+  }
+
+  .about-project__block-title {
+    font-size: 1.125rem;
+  }
+
+  .about-project__block-text {
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    margin-top: 1rem;
+  }
+
+  .about-project__time {
+    padding: 0.6875rem 0.625rem;
+  }
+
+  .about-project__bar {
+    font-size: 0.6875rem;
+    line-height: auto;
+    grid-template-columns: 6.25rem 1fr;
+    grid-template-rows: 2.1875rem auto;
+  }
+
+  .about-project__bar-name {
+    margin-top: 0.625rem;
+    line-height: normal;
+  }
+}
