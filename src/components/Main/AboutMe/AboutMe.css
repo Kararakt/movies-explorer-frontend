@@ -1,0 +1,152 @@
+.about-me {
+  margin: 0 4.375rem;
+  padding: 6.875rem 0 6.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__title {
+  margin: 0;
+  padding-bottom: 1.4375rem;
+  border-bottom: 1px solid #000;
+  font-size: 1.375rem;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.about-me__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4.125rem;
+}
+
+.about-me__description {
+  max-width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__name {
+  font-size: 3.125rem;
+  font-weight: 400;
+  line-height: 3.625rem;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+.about-me__profession {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  margin: 1.125rem 0 1.625rem;
+}
+
+.about-me__about {
+  line-height: 1.375rem;
+  margin: 0;
+}
+
+.about-me__link {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.35s linear;
+  margin-top: 2.05rem;
+}
+
+.about-me__link:hover {
+  opacity: 0.7;
+}
+
+.about-me__image {
+  height: 20.4375rem;
+  width: 16.875rem;
+  display: block;
+  object-fit: cover;
+  border-radius: 0.625rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+  .about-me {
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+    padding-top: 5.657rem;
+    padding-bottom: 5.747rem;
+  }
+
+  .about-me__description {
+    max-width: 22.75rem;
+  }
+
+  .about-me__image {
+    width: 15.938rem;
+    height: 19.1875rem;
+  }
+
+  .about-me__name {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .about-me__profession {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-me__about {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+
+  .about-me__link {
+    margin-top: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-me {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+    margin-left: 0.875rem;
+    margin-right: 0.875rem;
+  }
+
+  .about-me__title {
+    font-size: 1.125rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .about-me__container {
+    margin-top: 3.75rem;
+    flex-direction: column-reverse;
+  }
+
+  .about-me__image {
+    margin: 0 auto 2.5rem;
+    height: 22rem;
+    width: 18.25rem;
+  }
+
+  .about-me__name {
+    font-size: 1.875rem;
+    line-height: normal;
+  }
+
+  .about-me__profession {
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-me__about {
+    font-size: 0.6875rem;
+    line-height: 1rem;
+  }
+
+  .about-me__link {
+    margin-top: 2.5rem;
+  }
+}

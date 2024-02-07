@@ -1,0 +1,10 @@
+@import url("./vendor/normalize.css");
+@import url("./vendor/fonts/fonts.css");
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.page_scroll {
+  overflow: hidden;
+}

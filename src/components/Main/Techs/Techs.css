@@ -1,0 +1,111 @@
+.techs {
+  background-color: #f5f5f5;
+  padding: 6.875rem 4.375rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.techs__title {
+  margin: 0;
+  padding-bottom: 1.4375rem;
+  border-bottom: 1px solid #000;
+  font-size: 1.375rem;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.techs__subtitle {
+  font-size: 3.125rem;
+  font-weight: 400;
+  line-height: 3.625rem;
+  letter-spacing: -0.04em;
+  margin: 5.625rem 0 1.625rem;
+  text-align: center;
+}
+
+.techs__text {
+  max-width: 28.75rem;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.25rem;
+  letter-spacing: -0.04em;
+}
+
+.techs__items {
+  margin: 6.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 5.625rem);
+  grid-auto-rows: 3.75rem;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.techs__item {
+  background-color: #e8e8e8;
+  padding: 1.3125rem 0 1.375rem;
+  letter-spacing: -0.04em;
+  border-radius: 0.625rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1140px) {
+  .techs__items {
+    grid-template-columns: repeat(auto-fit, 5.25rem);
+    grid-auto-rows: 3.5625rem;
+  }
+
+  .techs__item {
+    font-size: 0.75rem;
+    padding-bottom: 1.3125rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+  .techs {
+    padding: 5.625rem 3.125rem;
+  }
+
+  .techs__items {
+    margin-top: 5.1875rem;
+  }
+
+  .techs__subtitle {
+    margin-top: 5rem;
+    margin-bottom: 1.375rem;
+  }
+
+  .techs__text {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .techs {
+    padding: 4.375rem 1.125rem;
+  }
+
+  .techs__title {
+    font-size: 1.125rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .techs__subtitle {
+    font-size: 1.875rem;
+    margin-top: 3.75rem;
+    margin-bottom: 1.5rem;
+    line-height: normal;
+  }
+
+  .techs__text {
+    max-width: 18.25rem;
+    line-height: 1rem;
+    font-size: 0.6875rem;
+  }
+
+  .techs__items {
+    margin: 3.125rem 3.3125rem 0 3.3125rem;
+  }
+}
