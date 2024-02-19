@@ -1,36 +1,50 @@
 import './MoviesCard.css';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { useLocation } from 'react-router-dom';
 
 import { convertMinutesToHours } from '../../../utils/utils';
 
-export const MoviesCard = ({ movie }) => {
-  const [isLiked, setIsLiked] = useState(false);
-  const location = useLocation().pathname;
+export const MoviesCard = ({
+  movie,
+  savedMovies,
+  onMovieSave,
+  onMovieDelete,
+}) => {
+  const { pathname } = useLocation();
 
-  const handleFavoriteClick = () => {
-    isLiked ? setIsLiked(false) : setIsLiked(true);
+  const isSaved = savedMovies.some((i) => i.movieId === movie.id);
+
+  const handleMovieSave = () => {
+    isSaved ? onMovieDelete(movie) : onMovieSave(movie);
   };
+
+  const handleMovieDelete = () => {
+    onMovieDelete(movie);
+  };
+
   return (
     <>
       <div className="movies-card__container">
-        <h2 className="movies-card__name">{movie.nameRu}</h2>
+        <h2 className="movies-card__name">{movie.nameRU}</h2>
         <span className="movies-card__duration">
           {convertMinutesToHours(movie.duration)}
         </span>
-        {location === '/movies' && (
+        {pathname === '/movies' && (
           <button
             type="button"
-            onClick={handleFavoriteClick}
             aria-label="Добавление в избранное"
+            onClick={handleMovieSave}
             className={`movies-card__button ${
-              isLiked ? 'movies-card__button_active' : ''
+              isSaved ? 'movies-card__button_active' : ''
             }`}
           ></button>
         )}
-        {location === '/saved-movies' && (
-          <button className="movies-card__button movies-card__button_type_delete"></button>
+        {pathname === '/saved-movies' && (
+          <button
+            onClick={handleMovieDelete}
+            className="movies-card__button movies-card__button_type_delete"
+          ></button>
         )}
       </div>
       <a
@@ -40,7 +54,11 @@ export const MoviesCard = ({ movie }) => {
         className="movies-card__link"
       >
         <img
-          src={movie.image}
+          src={
+            movie.image.url
+              ? `https://api.nomoreparties.co/${movie.image.url}`
+              : movie.image
+          }
           alt={`Фото ${movie.nameRu}`}
           className="movies-card__image"
         />

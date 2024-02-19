@@ -9,12 +9,12 @@ import { headerLinks } from '../../utils/constants';
 export const Navigation = () => {
   const [menuActive, setMenuActive] = useState(false);
 
-  const location = useLocation().pathname;
+  const { pathname } = useLocation();
 
-  const isLanding = location !== '/' ? '' : 'navigation__link_type_landing';
+  const isLanding = pathname !== '/' ? '' : 'navigation__link_type_landing';
   const isLandingProfile =
-    location !== '/' ? '' : 'navigation__image_type_landing';
-  const isLandingText = location !== '/' ? '' : 'navigation__text_type_landing';
+    pathname !== '/' ? '' : 'navigation__image_type_landing';
+  const isLandingText = pathname !== '/' ? '' : 'navigation__text_type_landing';
 
   const handleOpenMenu = () => setMenuActive(!menuActive);
 

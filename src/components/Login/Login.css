@@ -20,6 +20,10 @@
   font-size: 0.8125rem;
 }
 
+.login__input_error {
+  color: #ee3465;
+}
+
 .login__input-error {
   color: #ee3465;
   font-size: 0.625rem;
