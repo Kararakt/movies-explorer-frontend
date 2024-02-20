@@ -11,6 +11,10 @@
 }
 
 .movies-card__name {
+  max-width: 18.125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.125rem;
@@ -75,10 +79,18 @@
   .movies-card__image {
     height: 11.875rem;
   }
+
+  .movies-card__name {
+    max-width: 17.5rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .movies-card__image {
     height: 10.5rem;
+  }
+
+  .movies-card__name {
+    max-width: 14.6875rem;
   }
 }
