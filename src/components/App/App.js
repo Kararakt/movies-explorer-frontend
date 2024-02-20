@@ -89,7 +89,7 @@ export const App = () => {
           setIsPopup(true);
           setMessageImage(true);
           setMessageText('Вы успешно зарегистрировались!');
-          navigate('/signin');
+          onLogin({ email, password });
         }
       })
       .catch((error) => {

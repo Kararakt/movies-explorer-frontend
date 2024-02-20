@@ -5,8 +5,8 @@ import React, { useEffect, useState } from 'react';
 import { findMovies } from '../../utils/utils';
 import { errorSavedMoviesEmpty, errorEmpty } from '../../utils/constants';
 
-import { SearchForm } from '../Movies/SearchForm/SearchForm';
-import { MoviesCardList } from '../Movies/MoviesCardList/MoviesCardList';
+import { SearchForm } from '../SearchForm/SearchForm';
+import { MoviesCardList } from '../MoviesCardList/MoviesCardList';
 import { Preloader } from '../Movies/Preloader/Preloader';
 
 export const SavedMovies = ({ isLoading, savedMovies, onMovieDelete }) => {

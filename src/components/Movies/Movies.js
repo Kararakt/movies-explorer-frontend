@@ -6,8 +6,8 @@ import { getMovies } from '../../utils/MoviesApi';
 import { findMovies, calculateMovieSettings } from '../../utils/utils';
 import { errorEmpty, errorServer } from '../../utils/constants';
 
-import { SearchForm } from './SearchForm/SearchForm';
-import { MoviesCardList } from './MoviesCardList/MoviesCardList';
+import { SearchForm } from '../SearchForm/SearchForm';
+import { MoviesCardList } from '../MoviesCardList/MoviesCardList';
 import { Preloader } from './Preloader/Preloader';
 
 export const Movies = ({ savedMovies, onMovieSave, onMovieDelete }) => {

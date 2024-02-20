@@ -1,5 +1,5 @@
 import './SearchForm.css';
-import search from '../../../images/search.svg';
+import search from '../../images/search.svg';
 
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';

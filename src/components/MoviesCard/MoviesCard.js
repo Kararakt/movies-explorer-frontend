@@ -3,7 +3,7 @@ import './MoviesCard.css';
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { convertMinutesToHours } from '../../../utils/utils';
+import { convertMinutesToHours } from '../../utils/utils';
 
 export const MoviesCard = ({
   movie,

@@ -40,7 +40,7 @@
   right: 0;
   top: 0.3125rem;
   background-color: #f9f9f9;
-  background-image: url("../../../images/favorite-gray.svg");
+  background-image: url("../../images/favorite-gray.svg");
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 2.25rem;
@@ -58,11 +58,11 @@
 
 .movies-card__button_active {
   background-color: #2be080;
-  background-image: url("../../../images/favorite-white.svg");
+  background-image: url("../../images/favorite-white.svg");
 }
 
 .movies-card__button_type_delete {
-  background-image: url("../../../images/button-delete.svg");
+  background-image: url("../../images/button-delete.svg");
 }
 
 @media screen and (max-width: 1140px) {
