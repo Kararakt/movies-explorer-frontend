@@ -8,7 +8,8 @@ import { useFormAndValidation } from '../../hooks/useFormAndValidation';
 export const Profile = ({ onSignOut, onUpdateUser }) => {
   const currentUser = React.useContext(CurrentUserContext);
 
-  const { values, handleChange, isValid, resetForm } = useFormAndValidation();
+  const { values, handleChange, isValid, setIsValid, resetForm } =
+    useFormAndValidation();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -18,6 +19,14 @@ export const Profile = ({ onSignOut, onUpdateUser }) => {
       email: values.email,
     });
   };
+
+  useEffect(() => {
+    const { email: currentEmail, name: currentName } = currentUser;
+    const { email: inputEmail, name: inputName } = values;
+
+    if (currentEmail === inputEmail && currentName === inputName)
+      setIsValid(false);
+  }, [currentUser, values, setIsValid]);
 
   useEffect(() => {
     currentUser ? resetForm(currentUser) : resetForm();
