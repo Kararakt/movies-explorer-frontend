@@ -7,9 +7,9 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { Navigation } from '../Navigation/Navigation';
 
 export const Header = ({ loggedIn }) => {
-  const location = useLocation().pathname;
+  const { pathname } = useLocation();
 
-  const isLanding = location === '/' ? 'header_type_landing' : '';
+  const isLanding = pathname === '/' ? 'header_type_landing' : '';
 
   return (
     <header className={`header ${isLanding}`}>

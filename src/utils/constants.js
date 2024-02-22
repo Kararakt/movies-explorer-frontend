@@ -93,6 +93,13 @@ export const footerLinks = [
   },
 ];
 
+export const errorMessage = 'Что-то пошло не так! Попробуйте ещё раз.';
+export const errorEmpty = 'Ничего не найдено';
+export const errorSavedMoviesEmpty =
+  'Ваш список фильмов пуст, добавьте свой первый фильм в избранное!';
+export const errorServer =
+  'Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз';
+
 export const moviesCards = [
   {
     id: 1,

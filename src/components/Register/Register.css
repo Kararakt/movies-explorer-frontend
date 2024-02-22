@@ -20,6 +20,10 @@
   font-size: 0.8125rem;
 }
 
+.register__input_error {
+  color: #ee3465;
+}
+
 .register__input-error {
   color: #ee3465;
   font-size: 0.625rem;
